@@ -1,11 +1,16 @@
-﻿Home directory
-==============
+home
+====
 
-Home directory config
+Config files for $HOME
 
-#vim
+# Vim
 ```bash
-$ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+ln -s <repo>/vim ~/.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
 ```
-:PluginInstall <ENTER>
 
+# Git
+```bash
+ln -s <repo>/git/gitconfig ~/.gitconfig
+```
