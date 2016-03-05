@@ -1,0 +1,31 @@
+[user]
+	name = Sergey Demenok
+	email = sergey.demenok@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+	ss = status
+	ci = commit
+	br = branch
+	rb = rebase
+	co = checkout
+[color "diff"]
+	old = "#ff4500"
+	new = "#ffff00"
+	frag = magenta bold
+[color "status"]
+	untracked = cyan
+	changed = "#ff4500"
+	added = "#ffff00"
+[color "branch"]
+	current = "#ffff00 reverse"
+	local = "#00ff00"
+	remote = "#ff4500"
+[log]
+	decorate = full
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
