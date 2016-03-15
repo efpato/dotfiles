@@ -2,15 +2,12 @@ let python_highlight_all=1
 let python_highlight_exceptions=0
 let python_highlight_builtins=0
 let python_slow_sync=1
-autocmd FileType python set colorcolumn=120
 autocmd FileType python setlocal completeopt-=preview
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8
             \ formatoptions+=croq softtabstop=4 smartindent
             \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 autocmd FileType pyrex setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 smartindent 
             \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
-let g:syntastic_python_checkers = ['pylynt']
-let g:syntastic_python_pylint_post_args='--max-line-length=120'
 
 "=====================================================
 " Python-mode settings
@@ -24,7 +21,7 @@ let g:pymode_doc = 0
 
 " Linting
 let g:pymode_lint = 1
-let g:pymode_lint_checkers = ['pylint', 'pep8']
+let g:pymode_lint_checkers = "pylint,pep8"
 let g:pymode_lint_ignore="C0110,C0111,C1001"
 let g:pymode_lint_write = 1
 

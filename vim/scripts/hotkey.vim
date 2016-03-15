@@ -15,10 +15,13 @@ let s:comment_map = {
 function! ToggleComment()
   if has_key(s:comment_map, &filetype)
     let comment_leader = s:comment_map[&filetype]
-    if getline('.') =~ "^" . comment_leader
-      execute "silent s/^" . comment_leader . "//"
-    else
-      execute "silent s/^/" . comment_leader . "/"
+    let line = getline('.')
+    if strlen(line)
+      if line =~ "^" . comment_leader
+        execute "silent s/^" . comment_leader . "//"
+      else
+        execute "silent s/^/" . comment_leader . "/"
+      endif
     endif
   else
     echo "No comment leader found for filetype"
