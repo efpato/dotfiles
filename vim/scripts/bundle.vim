@@ -26,6 +26,7 @@ Plugin 'jmcantrell/vim-virtualenv'
 
 " --- JavaScript ---
 Plugin 'pangloss/vim-javascript'
+Plugin 'jelera/vim-javascript-syntax'
 
 Plugin 'Valloric/YouCompleteMe'
 

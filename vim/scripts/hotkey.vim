@@ -1,11 +1,11 @@
 " Comment/Uncomment
 let s:comment_map = {
-    \   "c": '// ',
-    \   "cpp": '// ',
-    \   "go": '// ',
-    \   "java": '// ',
-    \   "javascript": '// ',
-    \   "php": '// ',
+    \   "c": '\/\/ ',
+    \   "cpp": '\/\/ ',
+    \   "go": '\/\/ ',
+    \   "java": '\/\/ ',
+    \   "javascript": '\/\/ ',
+    \   "php": '\/\/ ',
     \   "python": '# ',
     \   "ruby": '# ',
     \   "sh": '# ',

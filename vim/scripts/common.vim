@@ -34,3 +34,5 @@ set expandtab
 set shiftwidth=4
 set cursorline
 set showmatch
+
+set clipboard+=unnamedplus
