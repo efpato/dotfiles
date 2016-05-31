@@ -1,6 +1,6 @@
 let python_highlight_all=1
-let python_highlight_exceptions=0
-let python_highlight_builtins=0
+let python_highlight_exceptions=1
+let python_highlight_builtins=1
 let python_slow_sync=1
 autocmd FileType python setlocal completeopt-=preview
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8
@@ -45,7 +45,7 @@ let g:pymode_run = 0
 
 " Other options
 let g:pymode_options_colorcolumn = 0
-let g:pymode_options_max_line_length = 120
+let g:pymode_options_max_line_length = 80
 
 " Python code check on PEP8                                                                                                                                                                                                                
 autocmd FileType python map <buffer> <F7> :PymodeLint<CR>
@@ -64,4 +64,4 @@ let g:jedi#goto_definitions_command = ""
 let g:jedi#documentation_command = "K"
 let g:jedi#usages_command = "<C-c>n"
 let g:jedi#completions_command = "<C-Space>"
-let g:jedi#rename_command = "<C-r>r"
+let g:jedi#rename_command = "<C-c>r"
