@@ -1,4 +1,4 @@
-source ~/.vim/scripts/bundle.vim
+source ~/.vim/scripts/plug.vim
 source ~/.vim/scripts/common.vim
 source ~/.vim/scripts/nerdtree.vim
 source ~/.vim/scripts/tagbar.vim

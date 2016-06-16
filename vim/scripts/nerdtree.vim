@@ -3,6 +3,7 @@ inoremap <F1> <Esc>:NERDTreeToggle<CR>
 
 let NERDTreeIgnore = [
   \ '\.pyc$', 
-  \ '^__pycache__$'
+  \ '^__pycache__$',
+  \ '\.egg-info$'
   \ ]
 
