@@ -22,7 +22,7 @@ let g:pymode_doc = 0
 " Linting
 let g:pymode_lint = 1
 let g:pymode_lint_checkers = "pylint,pep8"
-let g:pymode_lint_ignore="C0110,C0111,C1001"
+let g:pymode_lint_ignore = "C0110,C0111,W0702,R0921,R0923"
 let g:pymode_lint_write = 1
 
 " Support virtualenv
