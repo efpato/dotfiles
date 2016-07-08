@@ -5,5 +5,11 @@ source ~/.vim/scripts/tagbar.vim
 source ~/.vim/scripts/hotkey.vim
 source ~/.vim/scripts/airline.vim
 source ~/.vim/scripts/vim.vim
+source ~/.vim/scripts/syntastic.vim
 source ~/.vim/scripts/python.vim
 source ~/.vim/scripts/javascript.vim
+
+
+if filereadable(glob("./.vimrc.local"))
+  source ./.vimrc.local
+endif

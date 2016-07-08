@@ -2,6 +2,7 @@ let python_highlight_all=1
 let python_highlight_exceptions=1
 let python_highlight_builtins=1
 let python_slow_sync=1
+
 autocmd FileType python setlocal completeopt-=preview
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8
             \ formatoptions+=croq softtabstop=4 smartindent
@@ -10,52 +11,22 @@ autocmd FileType pyrex setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 s
             \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 
 "=====================================================
-" Python-mode settings
+" Syntastic
 "=====================================================
-let g:pymode_rope = 0
-let g:pymode_rope_completion = 0
-let g:pymode_rope_complete_on_dot = 0
+let g:syntastic_python_checkers = ['pylint', 'pep8']
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_python_pep8_args = '--max-line-length=80'
+let g:syntastic_python_pylint_args = '--disable=C0301,C0111'
 
-" Documentation
-let g:pymode_doc = 0
 
-" Linting
-let g:pymode_lint = 1
-let g:pymode_lint_checkers = "pylint,pep8"
-let g:pymode_lint_ignore = "C0110,C0111,W0702,R0921,R0923"
-let g:pymode_lint_write = 1
-
-" Support virtualenv
-let g:pymode_virtualenv = 1
-
-" Enable breakpoints plugin
-let g:pymode_breakpoint = 0
-
-" Syntax highlighting
-let g:pymode_syntax = 1
-let g:pymode_syntax_all = 1
-let g:pymode_syntax_indent_errors = g:pymode_syntax_all
-let g:pymode_syntax_space_errors = g:pymode_syntax_all
-
-" Don't autofold code
-let g:pymode_folding = 0
-
-" Get possibility to run Python code
-let g:pymode_run = 0
-
-" Other options
-let g:pymode_options_colorcolumn = 0
-let g:pymode_options_max_line_length = 80
-
-" Python code check on PEP8                                                                                                                                                                                                                
-autocmd FileType python map <buffer> <F7> :PymodeLint<CR>
+autocmd FileType python map <buffer> <F7> :SyntasticCheck<CR>
 
 
 "=====================================================
 " Jedi settings
 "=====================================================
 let g:jedi#popup_select_first = 1
-let g:jedi#use_splits_not_buffers = "left"
+let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#show_call_signatures = 1
 
 let g:jedi#goto_command = "<C-c>d"

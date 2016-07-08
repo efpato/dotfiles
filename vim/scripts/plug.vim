@@ -12,15 +12,15 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'tpope/vim-fugitive'
 
+Plug 'scrooloose/syntastic'
+
 " --- Python ---
-Plug 'klen/python-mode'
 Plug 'davidhalter/jedi-vim'
-Plug 'mitsuhiko/vim-jinja'
-Plug 'jmcantrell/vim-virtualenv'
+" Plug 'mitsuhiko/vim-jinja'
 
 " --- JavaScript ---
-Plug 'pangloss/vim-javascript'
-Plug 'jelera/vim-javascript-syntax'
+" Plug 'pangloss/vim-javascript'
+" Plug 'jelera/vim-javascript-syntax'
 
 Plug 'Valloric/YouCompleteMe'
 
