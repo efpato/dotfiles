@@ -15,6 +15,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/syntastic'
 
 " --- Python ---
+Plug 'hynek/vim-python-pep8-indent'
 Plug 'davidhalter/jedi-vim'
 " Plug 'mitsuhiko/vim-jinja'
 

@@ -16,7 +16,7 @@ autocmd FileType pyrex setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 s
 let g:syntastic_python_checkers = ['pylint', 'pep8']
 let g:syntastic_aggregate_errors = 1
 let g:syntastic_python_pep8_args = '--max-line-length=80'
-let g:syntastic_python_pylint_args = '--disable=C0301,C0111'
+let g:syntastic_python_pylint_args = '--disable=C0301,C0111,C0103'
 
 
 autocmd FileType python map <buffer> <F7> :SyntasticCheck<CR>

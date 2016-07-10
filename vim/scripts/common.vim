@@ -36,3 +36,5 @@ set cursorline
 set showmatch
 
 set clipboard+=unnamedplus
+
+colorscheme ron
