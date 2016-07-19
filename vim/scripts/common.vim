@@ -37,4 +37,4 @@ set showmatch
 
 set clipboard+=unnamedplus
 
-colorscheme ron
+colorscheme wombat256mod
