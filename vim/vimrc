@@ -5,7 +5,7 @@ source ~/.vim/scripts/tagbar.vim
 source ~/.vim/scripts/hotkey.vim
 source ~/.vim/scripts/airline.vim
 source ~/.vim/scripts/vim.vim
-source ~/.vim/scripts/syntastic.vim
+source ~/.vim/scripts/neomake.vim
 source ~/.vim/scripts/python.vim
 source ~/.vim/scripts/javascript.vim
 

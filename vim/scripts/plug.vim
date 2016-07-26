@@ -12,7 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'scrooloose/syntastic'
+Plug 'neomake/neomake'
 
 " --- Python ---
 Plug 'hynek/vim-python-pep8-indent'
