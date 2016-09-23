@@ -24,10 +24,12 @@ Plug 'davidhalter/jedi-vim'
 " Plug 'mitsuhiko/vim-jinja'
 
 " --- JavaScript ---
-" Plug 'pangloss/vim-javascript'
-" Plug 'jelera/vim-javascript-syntax'
+Plug 'pangloss/vim-javascript'
 
 " --- Dockerfile ---
 Plug 'ekalinin/Dockerfile.vim'
+
+" --- Ansible ---
+Plug 'pearofducks/ansible-vim'
 
 call plug#end()

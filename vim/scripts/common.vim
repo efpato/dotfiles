@@ -19,11 +19,11 @@ set matchtime=0         " don't blink when matching
 set dir=/tmp
 set backupdir=/tmp
 
-" Highlight characters past column 120
+" Highlight characters past column 80
 augroup vimrc_autocmds
     autocmd!
     autocmd FileType ruby,python,javascript,c,cpp highlight Excess ctermbg=DarkGrey guibg=#c12a0f
-    autocmd FileType ruby,python,javascript,c,cpp match Excess /\%120v.*/
+    autocmd FileType ruby,python,javascript,c,cpp match Excess /\%80v.*/
     autocmd FileType ruby,python,javascript,c,cpp set nowrap
 augroup END
 

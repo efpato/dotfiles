@@ -8,6 +8,7 @@ source ~/.vim/scripts/vim.vim
 source ~/.vim/scripts/neomake.vim
 source ~/.vim/scripts/python.vim
 source ~/.vim/scripts/javascript.vim
+source ~/.vim/scripts/ansible.vim
 
 
 if filereadable(glob("./.vimrc.local"))

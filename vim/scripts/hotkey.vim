@@ -10,6 +10,8 @@ let s:comment_map = {
     \   "ruby": '# ',
     \   "sh": '# ',
     \   "vim": '" ',
+    \   "yml": '# ',
+    \   "yaml": '# ',
     \ }
 
 function! ToggleComment()
