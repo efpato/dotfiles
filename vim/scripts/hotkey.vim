@@ -1,5 +1,6 @@
 " Comment/Uncomment
 let s:comment_map = {
+    \   "ansible": '# ',
     \   "c": '\/\/ ',
     \   "cpp": '\/\/ ',
     \   "go": '\/\/ ',
