@@ -71,4 +71,4 @@ inoremap <C-space> <C-x><C-o>
 
 if has('nvim')
      nmap <BS> <C-W>h
- endif
+endif

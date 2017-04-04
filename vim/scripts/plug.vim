@@ -15,6 +15,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-fugitive'
 
 Plug 'neomake/neomake'
+Plug 'sbdchd/neoformat'
 
 Plug 'Valloric/YouCompleteMe'
 
@@ -25,6 +26,7 @@ Plug 'davidhalter/jedi-vim'
 
 " --- JavaScript ---
 Plug 'pangloss/vim-javascript'
+Plug 'marijnh/tern_for_vim'
 
 " --- Dockerfile ---
 Plug 'ekalinin/Dockerfile.vim'

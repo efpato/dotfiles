@@ -1,8 +1,3 @@
-let python_highlight_all=1
-let python_highlight_exceptions=1
-let python_highlight_builtins=1
-let python_slow_sync=1
-
 autocmd FileType python setlocal completeopt-=preview
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8
             \ formatoptions+=croq softtabstop=4 smartindent
@@ -10,6 +5,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=8
 autocmd FileType pyrex setlocal expandtab shiftwidth=4 tabstop=8 softtabstop=4 smartindent 
             \ cinwords=if,elif,else,for,while,try,except,finally,def,class,with
 
+map <F5> : !python %<CR>
 
 "=====================================================
 " Neomake
@@ -21,7 +17,7 @@ let g:neomake_python_pylint_args = neomake#makers#ft#python#pylint()['args'] +
   \ ]
 
 let g:neomake_python_enabled_makers = ['pep8', 'pylint']
-
+let g:neoformat_enabled_python = ['yapf']
 
 "=====================================================
 " Jedi settings
