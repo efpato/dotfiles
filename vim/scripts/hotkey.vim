@@ -69,6 +69,11 @@ nnoremap <M-]> :vertical resize +5<cr>
 " Activate autocomplete at <Ctrl+Space>
 inoremap <C-space> <C-x><C-o>
 
+" GoTo
+nnoremap <C-c>d :YcmCompleter GoTo<CR>
+
 if has('nvim')
      nmap <BS> <C-W>h
 endif
+
+

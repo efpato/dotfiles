@@ -34,4 +34,7 @@ Plug 'ekalinin/Dockerfile.vim'
 " --- Ansible ---
 Plug 'pearofducks/ansible-vim'
 
+" --- Rust ---
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
