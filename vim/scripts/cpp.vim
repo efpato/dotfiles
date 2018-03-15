@@ -10,4 +10,4 @@ let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_c_include_dirs = ['include', '../include']
 let g:syntastic_c_compiler = 'clang'
 
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '~/.vim/ycm_extra_conf.py'
