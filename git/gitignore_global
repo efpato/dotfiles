@@ -1,3 +1,5 @@
 .DS_Store
-.vimrc.local
+.pylintrc
 .tern-project
+.vimrc.local
+.ycm_extra_conf.py

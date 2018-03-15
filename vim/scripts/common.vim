@@ -23,8 +23,10 @@ set backupdir=/tmp
 augroup vimrc_autocmds
     autocmd!
     autocmd FileType ruby,python,javascript,c,cpp highlight Excess ctermbg=DarkGrey guibg=#c12a0f
-    autocmd FileType ruby,python,javascript,c,cpp match Excess /\%80v.*/
     autocmd FileType ruby,python,javascript,c,cpp set nowrap
+    autocmd FileType ruby,python match Excess /\%80v.*/
+    autocmd FileType c,cpp match Excess /\%100v.*/
+    autocmd FileType javascript match Excess /\%120v.*/
 augroup END
 
 syntax enable
@@ -37,4 +39,4 @@ set showmatch
 
 set clipboard+=unnamedplus
 
-colorscheme wombat256mod
+colorscheme Monokai
