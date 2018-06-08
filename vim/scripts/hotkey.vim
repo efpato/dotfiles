@@ -11,6 +11,7 @@ let s:comment_map = {
     \   "php": '\/\/ ',
     \   "python": '# ',
     \   "ruby": '# ',
+    \   "rust": '\/\/ ',
     \   "sh": '# ',
     \   "vim": '" ',
     \   "yml": '# ',
@@ -73,6 +74,12 @@ inoremap <C-space> <C-x><C-o>
 
 " GoTo
 nnoremap <C-c>d :YcmCompleter GoTo<CR>
+
+" GoToReferences
+nnoremap <C-c>n :YcmCompleter GoToReferences<CR>
+
+" GetDoc
+nnoremap K :YcmCompleter GetDoc<CR>
 
 if has('nvim')
      nmap <BS> <C-W>h

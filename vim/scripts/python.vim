@@ -11,11 +11,9 @@ map <F5> : !python %<CR>
 " Neomake
 "=====================================================
 let g:neomake_python_pylint_args = neomake#makers#ft#python#pylint()['args'] +
-  \ ['-d', 'line-too-long,
-  \         missing-docstring,
-  \         invalid-name'
+  \ ['-d', 'missing-docstring'
   \ ]
-let g:neomake_python_enabled_makers = ['pep8', 'pylint']
+let g:neomake_python_enabled_makers = ['pycodestyle', 'pylint']
 
 let g:neoformat_enabled_python = ['yapf']
 
@@ -26,7 +24,6 @@ let g:jedi#popup_select_first = 1
 let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#show_call_signatures = 1
 
-" let g:jedi#goto_command = "<C-c>d"
 let g:jedi#goto_assignments_command = "<C-c>g"
 let g:jedi#goto_definitions_command = "<C-c>d"
 let g:jedi#documentation_command = "K"

@@ -1,1 +1,1 @@
-let g:ycm_rust_src_path = '/Users/efpato/devel/ext/rust/rust/src'
+let g:ycm_rust_src_path = '$HOME/devel/ext/langs/rust/src'
