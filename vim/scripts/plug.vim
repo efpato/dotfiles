@@ -37,4 +37,7 @@ Plug 'pearofducks/ansible-vim'
 " --- Rust ---
 Plug 'rust-lang/rust.vim'
 
+" -- Golan ---
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()

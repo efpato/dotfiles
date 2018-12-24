@@ -13,6 +13,7 @@ source ~/.vim/scripts/python.vim
 source ~/.vim/scripts/javascript.vim
 source ~/.vim/scripts/ansible.vim
 source ~/.vim/scripts/rust.vim
+source ~/.vim/scripts/ruby.vim
 
 
 if filereadable(glob("./.vimrc.local"))
