@@ -26,7 +26,6 @@ Plug 'davidhalter/jedi-vim'
 
 " --- JavaScript ---
 Plug 'pangloss/vim-javascript'
-Plug 'marijnh/tern_for_vim'
 
 " --- Dockerfile ---
 Plug 'ekalinin/Dockerfile.vim'
@@ -39,5 +38,8 @@ Plug 'rust-lang/rust.vim'
 
 " -- Golan ---
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+" --- nginx ---
+Plug 'chr4/nginx.vim'
 
 call plug#end()
