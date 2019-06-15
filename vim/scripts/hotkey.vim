@@ -74,8 +74,11 @@ nnoremap <M-]> :vertical resize +5<cr>
 " Activate autocomplete at <Ctrl+Space>
 inoremap <C-space> <C-x><C-o>
 
-" GoTo
-nnoremap <C-c>d :YcmCompleter GoToDefinition<CR>
+" GoToDeclaration
+nnoremap <C-c>dc :YcmCompleter GoToDeclaration<CR>
+
+" GoToDefinition
+nnoremap <C-c>df :YcmCompleter GoToDefinition<CR>
 
 " GoToReferences
 nnoremap <C-c>n :YcmCompleter GoToReferences<CR>
