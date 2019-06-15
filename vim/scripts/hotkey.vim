@@ -16,6 +16,8 @@ let s:comment_map = {
     \   "vim": '" ',
     \   "yml": '# ',
     \   "yaml": '# ',
+    \   "nginx": '# ',
+    \   "dockerfile": '# ',
     \ }
 
 function! ToggleComment()
@@ -73,7 +75,7 @@ nnoremap <M-]> :vertical resize +5<cr>
 inoremap <C-space> <C-x><C-o>
 
 " GoTo
-nnoremap <C-c>d :YcmCompleter GoTo<CR>
+nnoremap <C-c>d :YcmCompleter GoToDefinition<CR>
 
 " GoToReferences
 nnoremap <C-c>n :YcmCompleter GoToReferences<CR>
