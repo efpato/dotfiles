@@ -16,3 +16,8 @@ nvim +PlugInstall +qall
 ln -s `pwd`/git/gitconfig ~/.gitconfig
 ln -s `pwd`/git/gitignore_global ~/.gitignore_global
 ```
+
+# pylint
+```bash
+ln -s `pwd`/pylint/.pylintrc ~/pylintrc
+```
