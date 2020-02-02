@@ -1,1 +1,3 @@
-let g:ycm_rust_src_path = '$HOME/devel/ext/langs/rust/src'
+let g:rustfmt_autosave = 1
+
+autocmd FileType rust map <F5> :RustRun<CR>

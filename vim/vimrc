@@ -1,19 +1,13 @@
 source ~/.vim/scripts/plug.vim
 source ~/.vim/scripts/common.vim
-source ~/.vim/scripts/cpp.vim
 source ~/.vim/scripts/nerdtree.vim
 source ~/.vim/scripts/tagbar.vim
 source ~/.vim/scripts/hotkey.vim
 source ~/.vim/scripts/airline.vim
 source ~/.vim/scripts/vim.vim
-source ~/.vim/scripts/ycm.vim
-source ~/.vim/scripts/neomake.vim
-source ~/.vim/scripts/neoformat.vim
 source ~/.vim/scripts/python.vim
-source ~/.vim/scripts/javascript.vim
 source ~/.vim/scripts/ansible.vim
 source ~/.vim/scripts/rust.vim
-source ~/.vim/scripts/ruby.vim
 
 
 if filereadable(glob("./.vimrc.local"))

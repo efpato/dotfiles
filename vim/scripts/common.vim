@@ -15,17 +15,32 @@ set scrolloff=5         " keep some more lines for scope
 set showmatch           " show matching brackets/parenthesis
 set matchtime=0         " don't blink when matching
 
-" Swaps and backups
-set dir=/tmp
-set backupdir=/tmp
+" if hidden is not set, TextEdit might fail.
+set hidden
 
-" Highlight characters past column 80
+" Some servers have issues with backup files, see #649
+set nobackup
+set nowritebackup
+
+" Better display for messages
+set cmdheight=2
+
+" You will have bad experience for diagnostic messages when it's default 4000.
+set updatetime=300
+
+" don't give |ins-completion-menu| messages.
+set shortmess+=c
+
+" always show signcolumns
+set signcolumn=yes
+
+" Highlight characters past column 120
 augroup vimrc_autocmds
     autocmd!
     autocmd FileType ruby,python,javascript,c,cpp highlight Excess ctermbg=DarkGrey guibg=#c12a0f
     autocmd FileType ruby,python,javascript,c,cpp set nowrap
-    autocmd FileType ruby,python match Excess /\%80v.*/
-    autocmd FileType c,cpp match Excess /\%100v.*/
+    autocmd FileType ruby,python match Excess /\%120v.*/
+    autocmd FileType c,cpp match Excess /\%120v.*/
     autocmd FileType javascript match Excess /\%120v.*/
 augroup END
 
@@ -39,4 +54,5 @@ set showmatch
 
 set clipboard+=unnamedplus
 
-colorscheme Monokai
+" colorscheme Monokai
+colorscheme Atelier_ForestDark
