@@ -1,4 +1,7 @@
 neovim
-pycodestyle
+jedi
+black
+isort
+mypy
 pylint
-yapf
+rope

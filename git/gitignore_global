@@ -3,3 +3,5 @@
 .tern-project
 .vimrc.local
 .ycm_extra_conf.py
+.vim/
+.mypy_cache/

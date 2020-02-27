@@ -8,6 +8,7 @@ Config files for $HOME
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ln -s `pwd`/vim ~/.vim
 ln -s ~/.vim/vimrc ~/.config/nvim/init.vim
+ln -s ~/.vim/vimrc ~/.config/nvim/coc-settings.json
 nvim +PlugInstall +qall
 ```
 
