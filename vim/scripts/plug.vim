@@ -34,4 +34,7 @@ Plug 'rust-lang/rust.vim'
 " --- nginx ---
 Plug 'chr4/nginx.vim'
 
+" --- toml ---
+Plug 'cespare/vim-toml'
+
 call plug#end()
