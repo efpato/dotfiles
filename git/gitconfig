@@ -7,11 +7,12 @@
 [color]
     ui = true
 [alias]
-    ss = status
-    ci = commit
     br = branch
-    rb = rebase
+    ci = commit
     co = checkout
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    rb = rebase
+    ss = status
 [log]
     decorate = full
 [filter "lfs"]
