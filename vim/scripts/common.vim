@@ -54,5 +54,4 @@ set showmatch
 
 set clipboard+=unnamedplus
 
-" colorscheme Monokai
-colorscheme Atelier_ForestDark
+colorscheme Monokai
