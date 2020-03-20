@@ -54,4 +54,14 @@ set showmatch
 
 set clipboard+=unnamedplus
 
+" folding
+set foldenable
+set foldmethod=indent
+
+" Keep all folds open when a file is opened
+augroup OpenAllFoldsOnFileOpen
+  autocmd!
+  autocmd BufRead * normal zR
+augroup END
+
 colorscheme Monokai
