@@ -64,4 +64,6 @@ augroup OpenAllFoldsOnFileOpen
   autocmd BufRead * normal zR
 augroup END
 
-colorscheme Monokai
+set termguicolors
+let ayucolor="dark"
+colorscheme ayu
