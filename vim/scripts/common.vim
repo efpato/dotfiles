@@ -44,6 +44,7 @@ augroup vimrc_autocmds
     autocmd FileType javascript match Excess /\%120v.*/
 augroup END
 
+filetype indent plugin on
 syntax enable
 set ts=4
 set autoindent
