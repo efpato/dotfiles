@@ -1,5 +1,4 @@
 neovim
-jedi
 black
 isort
 mypy
