@@ -19,7 +19,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " --- Python ---
-Plug 'hynek/vim-python-pep8-indent'
 Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
 
 " --- Dockerfile ---
