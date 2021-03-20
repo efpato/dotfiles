@@ -1,2 +1,1 @@
-autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
-autocmd BufWritePost *.go !gofmt -w %
+autocmd FileType go map <F5> :GoRun<CR>

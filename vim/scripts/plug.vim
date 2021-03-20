@@ -30,6 +30,9 @@ Plug 'pearofducks/ansible-vim'
 " --- Rust ---
 Plug 'rust-lang/rust.vim'
 
+" --- Go ---
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " --- nginx ---
 Plug 'chr4/nginx.vim'
 
