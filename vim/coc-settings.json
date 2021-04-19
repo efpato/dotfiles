@@ -1,11 +1,10 @@
 {
   "explorer.quitOnOpen": true,
-  "coc.preferences.jumpCommand": "tabe",
   "python.jediEnabled": false,
   "python.formatting.provider": "black",
   "python.linting.enabled": true,
   "python.linting.mypyEnabled": true,
   "python.linting.pylintEnabled": true,
-  "rust-analyzer.cargo.loadOutDirsFromCheck": true,
+  "python.linting.pylintPath": ".venv/bin/pylint",
   "rust-analyzer.procMacro.enable": true
 }
