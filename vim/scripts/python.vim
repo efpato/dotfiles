@@ -14,5 +14,5 @@ endif
 autocmd FileType python map <F5> :!python %<CR>
 autocmd FileType python map <F6> :call CocAction('format')<CR>
 
-autocmd BufWritePre *.py execute ':CocCommand python.sortImports'
 autocmd BufWritePre *.py execute ':call CocAction("format")'
+autocmd BufWritePre *.py execute ':CocCommand python.sortImports'
