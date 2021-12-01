@@ -2,7 +2,9 @@ set guifont=Meslo\ for\ Powerline
 set fillchars+=stl:\ ,stlnc:\
 set t_Co=256
 set encoding=utf-8
+set fileencoding=utf-8
 set termencoding=utf-8
+set noswapfile
 
 " Don't bell and blink
 set visualbell t_vb=    " turn off error beep/flash
