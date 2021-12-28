@@ -16,6 +16,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'ryanoasis/vim-devicons'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " --- Python ---
