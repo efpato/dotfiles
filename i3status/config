@@ -1,0 +1,94 @@
+general {
+    colors = true
+    interval = 1
+    output_format = "i3bar"
+}
+
+order += "read_file usd_avg"
+order += "read_file "
+order += "read_file "
+order += "volume master"
+order += "battery all"
+order += "disk /"
+order += "memory"
+order += "cpu_usage"
+order += "tztime local"
+
+read_file usd_avg {
+	path = "~/.config/i3status/currency/AVG"
+	format = "%content"
+}
+
+read_file  {
+	path = "~/.config/i3status/currency/USD"
+	format = "%title %content"
+}
+
+read_file  {
+	path = "~/.config/i3status/currency/EUR"
+	format = "%title %content"
+}
+
+volume master {
+    format = " %volume"
+    format_muted = " %volume"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+battery all {
+    format = "%status %percentage"
+    format_percentage = "%.00f%s"
+    format_down = "No battery"
+    last_full_capacity = true
+    status_chr = "⚡"
+    status_bat = ""
+    status_unk = "? UNK"
+    status_full = ""
+    path = "/sys/class/power_supply/BAT%d/uevent"
+    threshold_type = "percentage"
+    low_threshold = 10
+}
+
+disk "/" {
+    # %used, %percentage_used - занятое пространство
+    # %free, %percentage_free - свободное пространство
+    # %avail, %percentage_avail - доступное пространство
+    # %total - всего
+    format = " %percentage_used"
+
+    low_threshold = "10"
+    threshold_type = "gbytes_avail"
+    format_below_threshold = " Warning: %avail"
+}
+
+memory {
+    # доступные переменные:
+    # %total, percentage_total
+    # %used, percentage_used
+    # %free, percentage_free
+    # %available, percentage_available
+    # %shared, percentage_shared
+    format = " %percentage_used"
+
+    threshold_degraded = "1G"
+    threshold_critical = "200M"
+    format_degraded = "MEMORY < %available"
+}
+
+cpu_usage {
+    # %usage - процентное использование ЦП
+    # %cpu<N> - начиная с %cpu0 и далее показывает использование ядер
+    format = " %usage"
+
+    # доступны параметры:
+    # degraded_threshold, окрас в желтый, по умолчанию 90
+    # max_threshold, окрас в красный, по умолчанию 95
+    # и кастомные форматы для них
+    # format_above_degraded_threshold и format_above_threshold
+}
+
+tztime local {
+    format = " %d %b  %H:%M"
+}
