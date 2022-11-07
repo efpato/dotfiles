@@ -41,4 +41,8 @@ Plug 'chr4/nginx.vim'
 " --- toml ---
 Plug 'cespare/vim-toml'
 
+" --- telescope ---
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.x' }
+
 call plug#end()

@@ -1,5 +1,5 @@
 " map leader key
-let mapleader = ','
+let mapleader = ' '
 
 " Easier split navigations
 nnoremap <C-j> <C-w><C-j>

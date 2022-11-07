@@ -10,6 +10,7 @@ source ~/.vim/scripts/ansible.vim
 source ~/.vim/scripts/go.vim
 source ~/.vim/scripts/rust.vim
 source ~/.vim/scripts/sql.vim
+source ~/.vim/scripts/telescope.vim
 
 
 if filereadable(glob("./.vimrc.local"))
