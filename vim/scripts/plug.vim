@@ -4,7 +4,11 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree'
+" --- Tree ---
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-tree/nvim-tree.lua'
+
+" --- TagBar ---
 Plug 'majutsushi/tagbar'
 
 Plug 'vim-airline/vim-airline'

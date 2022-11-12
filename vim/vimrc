@@ -1,6 +1,6 @@
 source ~/.vim/scripts/plug.vim
 source ~/.vim/scripts/common.vim
-source ~/.vim/scripts/nerdtree.vim
+source ~/.vim/scripts/nvim-tree.lua
 source ~/.vim/scripts/tagbar.vim
 source ~/.vim/scripts/hotkey.vim
 source ~/.vim/scripts/airline.vim

@@ -139,4 +139,5 @@ if has('nvim')
      nmap <BS> <C-W>h
 endif
 
-
+noremap <F1> :NvimTreeToggle<CR>
+inoremap <F1> <Esc>:NvimTreeToggle<CR>
